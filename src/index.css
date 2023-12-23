@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  background-color: #222020;
+  font-size: 2rem;
+}
+
+/* the conatiner styling*/
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* calculator div styling */
+.wrapper{
+  height: 80vh;
+  width: 50vh;
+  padding: 1rem;
+  display: grid;
+  background-color: black;
+  border-radius: 10%;
+  box-shadow: 0 0 0.5rem rgb(61 49 49);
+  outline: 2px solid rgb(20 13 13 / 60%);
+  
+}
+/* input display div */
+.input-wrapper{
+  padding: 0.5rem;
+}
+
+.input-screen{
+  height: 15vh;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size:2rem;
+  color:white;
+  text-align: right;
+  background-color: rgb(93, 97, 93);
+}
+
+/* button div styling */
+.btn-div{
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.btn{
+  height: 8vh;
+  font-size: 1.5rem;
+  border-radius: 25%;
+  text-align: center; 
+  cursor: pointer;
+}
+.btn-grey{
+  background-color: #55595e;
+  
+}
+.btn-light-grey{
+  background-color: #b7bec5;  
+}
+.btn-orange{
+  background-color: orange;
+}
+
+.zero{
+  grid-column: 1 / span 2; 
+  border-radius: 14%;;
+}
+.btn:hover{
+  background-color: gray;
+}
+
+.btn-orange:hover{
+  background-color: darkorange;
+}
